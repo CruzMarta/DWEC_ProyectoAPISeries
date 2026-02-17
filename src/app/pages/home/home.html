@@ -1,0 +1,15 @@
+<section class="home-container">
+  <h2>Listado de Series</h2>
+
+  <div class="grid-series">
+    @for (serie of series(); track serie.id) {
+      <article class="serie-card">
+        <h3>{{ serie.title }}</h3>
+        <p><strong>Canal:</strong> {{ serie.channel }}</p>
+        <p><strong>Rating:</strong> {{ serie.rating }} / 10</p>
+      </article>
+    } @empty {
+      <p>Cargando series...</p>
+    }
+  </div>
+</section>

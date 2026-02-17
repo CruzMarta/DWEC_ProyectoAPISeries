@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f4f7f6;
+  box-sizing: border-box;
+}
